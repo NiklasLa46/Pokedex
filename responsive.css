@@ -1,0 +1,12 @@
+@media(max-width: 525px) {
+    .content{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media(max-width: 360px) {
+    h1{
+        display: none;
+    }
+}

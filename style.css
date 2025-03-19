@@ -1,0 +1,325 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 80px;
+    padding-top: 110px;
+    overflow-y: auto;          /* Enables vertical scrolling if content overflows */
+    overflow-x: hidden;    
+}
+
+.headerPokeball {
+    height: 80px;
+    padding-left: 20px;
+}
+
+input {
+    margin-right: 30px;
+    width: 80px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f1e507a;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    background-color: #0f1e507a;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  height: 100vh;
+    margin: 0px;
+    color: white;
+    font-family: "Roboto";
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+    background-color: #0f1e507a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardComplete {
+    margin: 15px;
+    outline: 1px solid black;
+    border-radius: 10px;
+    width: 160px;
+}
+
+.cardComplete:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.pokemonName {
+    margin-left: 5px;
+}
+
+.cardPokeImg {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: center;
+    background-color: #0f1e507a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.openedCard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 80%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.bigCardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.bigCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 5px 20px;
+}
+
+
+.bigCardFooter {
+    background-color: #0f1e50;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bigCardHeader {
+    background-color: #0f1e50;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.arrowImg {
+    height: 40px;
+    background-color: #0f1e50;
+}
+
+.arrowButton {
+    border: none;
+    background-color: #0f1e50;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.loadButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.loadButton {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #0f1e50;
+    color: white;
+    cursor: pointer;
+}
+
+.footerPokeball {
+    height: 20px;
+    padding: 10px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid lightgray;
+    border-top-color: blue;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+input {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white;       /* White border */
+    border-radius: 8px;            /* Rounded corners */
+    padding: 8px 12px;             /* Padding for better spacing */
+    color: white;                  /* White text color */
+    font-size: 16px;               /* Adjust font size */
+    outline: none;                 /* Remove outline on focus */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+
+  input::placeholder {
+    color: white; /* White color for placeholder text */
+    opacity: 0.7; /* Slight transparency for placeholder */
+  }
+  
+  input:focus {
+    border-color: #00BFFF; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.6); /* Add a glow effect */
+  }
+
+  .arrowButton {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .arrowButton:hover {
+    transform: translateY(-8px);
+    border-color: #00BFFF;
+  }
+  
+  .arrowButton.left::before,
+  .arrowButton.right::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin: 0 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .arrowButton.left::before {
+    border-right: 10px solid white;
+  }
+  
+  .arrowButton.right::after {
+    border-left: 10px solid white;
+  }
+  
+  .arrowButton.left::after,
+  .arrowButton.right::before {
+    display: none;
+  }
+  
+  .arrowButton:hover .left::before {
+    border-right: 10px solid #00BFFF;
+  }
+  
+  .arrowButton:hover .right::after {
+    border-left: 10px solid #00BFFF;
+  }
+  
+  
