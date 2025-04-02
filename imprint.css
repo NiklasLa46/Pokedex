@@ -1,0 +1,47 @@
+.content-imprint{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 80px;
+    overflow-y: auto;          
+    overflow-x: hidden;    
+    margin-top: 110px;
+}
+
+body{
+    background-color: azure !important;
+    background-image: none;
+}
+  
+h1, h2 , h3, p{
+ color: rgb(0, 0, 0);
+}
+
+.main-cap{
+    color: white;
+}
+
+p{
+    font-size: 24px;
+}
+
+a{
+    color: rgb(180, 29, 29);
+}
+
+a:hover{
+    color: rgb(28, 131, 221);
+}
+
+@media(max-width: 800px) {
+    .content-imprint {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .p{
+        font-size: 20px;
+    }
+}

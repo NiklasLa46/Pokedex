@@ -6,7 +6,7 @@
     padding-right: 150px;
     padding-bottom: 80px;
     padding-top: 110px;
-    overflow-y: auto;          /* Enables vertical scrolling if content overflows */
+    overflow-y: auto;          
     overflow-x: hidden;    
 }
 
@@ -327,4 +327,17 @@ input {
     border-left: 10px solid #00BFFF;
   }
   
-  
+  .imprint-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imprint-link:hover {
+    color: lightblue;
+}
+
